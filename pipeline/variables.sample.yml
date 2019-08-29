@@ -25,9 +25,9 @@ terraform_storage_bucket_name: ($ organization_canonical $)-terraform-remote-sta
 # Repos
 #
 
-#. git_repository (required): git@github.com:MyUser/config-terraform-runner-app.git
+#. git_repository (required): git@github.com:MyUser/terraform-code.git
 #+ URL to the Git repository containing terraform source code.
-git_repository: git@github.com:MyUser/config-terraform-runner-app.git
+git_repository: git@github.com:MyUser/terraform-code.git
 
 #. git_branch (required): master
 #+ Branch of the terraform source code Git repository.
@@ -37,9 +37,9 @@ git_branch: master
 #+ SSH key pair to fetch terraform source code Git repository.
 git_private_key: ((git_config.ssh_key))
 
-#. git_terraform_path (required): /
+#. git_terraform_path (required): ./
 #+ Path of Terraform files in the git repository
-git_terraform_path: /
+git_terraform_path: ./
 
 #
 # Default variables that shouldn't be changed except if needed
@@ -57,6 +57,6 @@ project: ($ project $)
 #+ Name of the Cycloid Organization, used as customer variable name.
 customer: ($ organization_canonical $)
 
-#. terraform_version (required): '0.12.6'
+#. terraform_version (required): 'latest'
 #+ terraform version used to execute your code.
-terraform_version: '0.12.6'
+terraform_version: 'latest'

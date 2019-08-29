@@ -68,7 +68,7 @@ jobs:
       - put: tfstate
         params:
           plan_only: true
-          terraform_source: ((git_terraform_path))/
+          terraform_source: git_terraform/((git_terraform_path))/
 
 # Merge and trigger an apply manually (no autostart of this job)
 - name: terraform-apply
@@ -89,7 +89,7 @@ jobs:
       - put: tfstate
         params:
           plan_run: true
-          terraform_source: ((git_terraform_path))/
+          terraform_source: git_terraform/((git_terraform_path))/
 
 - name: terraform-destroy
   max_in_flight: 1
@@ -102,6 +102,6 @@ jobs:
         - put: tfstate
           params:
             action: destroy
-            terraform_source: ((git_terraform_path))/
+            terraform_source: git_terraform/((git_terraform_path))/
           get_params:
             action: destroy
