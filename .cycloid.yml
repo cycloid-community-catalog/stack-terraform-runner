@@ -1,7 +1,7 @@
 # Configuration of the CI pipeline
 name: 'terraform-runner'
 canonical: 'stack-terraform-runner'
-description: 'Allow you to do a simple terraform plan/apply.'
+description: 'Allow you to do simple terraform actions: plan, create, destroy'
 keywords:
   - 'terraform-runner'
   - 'terraform'
