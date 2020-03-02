@@ -1,6 +1,7 @@
 # Configuration of the CI pipeline
 name: 'terraform-runner'
-canonical: 'stack-terraform-runner'
+canonical: 'stack-terraform-runner
+status: 'public'
 description: 'Allow you to do simple terraform actions: plan, create, destroy'
 keywords:
   - 'terraform-runner'
