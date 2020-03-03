@@ -54,6 +54,10 @@ pipeline_env_vars:
   PIPELINE_VARIABLES: variables.sample.yml
   # Where to create the pipeline
   ORGANIZATION: cycloid-owl
+  # Which project to use for pipeline
+  PROJECT: ci-stack-terraform-runner
+  # Which environment to use for pipeline
+  ENVIRONMENT: master
   # Tmp name to create the pipeline
   PIPELINE_NAME: ci-stack-terraform-runner-master-validate
 
@@ -71,7 +75,6 @@ stack_terraform_path: terraform
 #+ Path of pipeline variables files in the config git repository
 config_pipeline_path: .ci/pipeline
 stack_pipeline_path: pipeline
-
 
 
 #
