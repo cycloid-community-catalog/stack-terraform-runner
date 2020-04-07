@@ -53,7 +53,7 @@ Currently, Cycloid console doesn't support yet switching between different pipel
 |`customer`|Name of the Cycloid Organization, used as customer variable name.|`-`|`($ organization_canonical $)`|`True`|
 |`env`|Name of the project's environment.|`-`|`($ environment $)`|`True`|
 |`git_branch`|Branch of the terraform source code Git repository.|`-`|`master`|`True`|
-|`git_private_key`|SSH key pair to fetch terraform source code Git repository.|`-`|`((git_config.ssh_key))`|`True`|
+|`git_private_key`|SSH key pair to fetch terraform source code Git repository.|`-`|`((ssh_config.ssh_key))`|`True`|
 |`git_repository`|URL to the Git repository containing terraform source code.|`-`|`git@github.com:MyUser/terraform-code.git`|`True`|
 |`git_terraform_path`|Path of Terraform files in the git repository|`-`|`./`|`True`|
 |`project`|Name of the project.|`-`|`($ project $)`|`True`|
@@ -70,7 +70,7 @@ Currently, Cycloid console doesn't support yet switching between different pipel
 |`customer`|Name of the Cycloid Organization, used as customer variable name.|`-`|`($ organization_canonical $)`|`True`|
 |`env`|Name of the project's environment.|`-`|`($ environment $)`|`True`|
 |`git_branch`|Branch of the terraform source code Git repository.|`-`|`master`|`True`|
-|`git_private_key`|SSH key pair to fetch terraform source code Git repository.|`-`|`((git_config.ssh_key))`|`True`|
+|`git_private_key`|SSH key pair to fetch terraform source code Git repository.|`-`|`((ssh_config.ssh_key))`|`True`|
 |`git_repository`|URL to the Git repository containing terraform source code.|`-`|`git@github.com:MyUser/terraform-code.git`|`True`|
 |`git_terraform_path`|Path of Terraform files in the git repository|`-`|`./`|`True`|
 |`project`|Name of the project.|`-`|`($ project $)`|`True`|
@@ -90,7 +90,7 @@ Currently, Cycloid console doesn't support yet switching between different pipel
 |`gcp_project`|Google Cloud Platform project to use for Terraform.|`-`|`($ project $)`|`True`|
 |`gcp_region`|Google Cloud Platform region to use for Terraform.|`-`|`europe-west1`|`True`|
 |`git_branch`|Branch of the terraform source code Git repository.|`-`|`master`|`True`|
-|`git_private_key`|SSH key pair to fetch terraform source code Git repository.|`-`|`((git_config.ssh_key))`|`True`|
+|`git_private_key`|SSH key pair to fetch terraform source code Git repository.|`-`|`((ssh_config.ssh_key))`|`True`|
 |`git_repository`|URL to the Git repository containing terraform source code.|`-`|`git@github.com:MyUser/terraform-code.git`|`True`|
 |`git_terraform_path`|Path of Terraform files in the git repository|`-`|`./`|`True`|
 |`project`|Name of the project.|`-`|`($ project $)`|`True`|
@@ -110,7 +110,7 @@ Currently, Cycloid console doesn't support yet switching between different pipel
 |`customer`|Name of the Cycloid Organization, used as customer variable name.|`-`|`($ organization_canonical $)`|`True`|
 |`env`|Name of the project's environment.|`-`|`($ environment $)`|`True`|
 |`git_branch`|Branch of the terraform source code Git repository.|`-`|`master`|`True`|
-|`git_private_key`|SSH key pair to fetch terraform source code Git repository.|`-`|`((git_config.ssh_key))`|`True`|
+|`git_private_key`|SSH key pair to fetch terraform source code Git repository.|`-`|`((ssh_config.ssh_key))`|`True`|
 |`git_repository`|URL to the Git repository containing terraform source code.|`-`|`git@github.com:MyUser/terraform-code.git`|`True`|
 |`git_terraform_path`|Path of Terraform files in the git repository|`-`|`./`|`True`|
 |`project`|Name of the project.|`-`|`($ project $)`|`True`|
