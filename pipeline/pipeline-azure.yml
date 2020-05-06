@@ -23,6 +23,7 @@ resources:
   type: terraform
   source:
     env_name: ((env))
+    private_key: ((terraform_modules_private_key))
     backend_type: azurerm
     backend_config:
       container_name: ((terraform_storage_container_name))

@@ -23,6 +23,7 @@ resources:
   type: terraform
   source:
     env_name: ((env))
+    private_key: ((terraform_modules_private_key))
     backend_type: gcs
     backend_config:
       bucket: ((terraform_storage_bucket_name))
