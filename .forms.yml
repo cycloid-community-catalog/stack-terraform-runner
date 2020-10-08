@@ -115,12 +115,9 @@ s3-compatible:
       - name: "S3 skip credentials validation"
         description: "Skip the credentials validation via the STS API."
         key: terraform_s3_skip_credentials_validation
-        widget: dropdown
+        widget: switch
         type: boolean
         default: true
-        values:
-            - true
-            - false
       - name: "S3 force path style"
         description: "Always use path-style S3 URLs (https://<HOST>/<BUCKET> instead of https://<BUCKET>.<HOST>)."
         key: terraform_s3_force_path_style
