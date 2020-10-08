@@ -121,12 +121,9 @@ s3-compatible:
       - name: "S3 force path style"
         description: "Always use path-style S3 URLs (https://<HOST>/<BUCKET> instead of https://<BUCKET>.<HOST>)."
         key: terraform_s3_force_path_style
-        widget: dropdown
+        widget: switch
         type: boolean
         default: true
-        values:
-            - true
-            - false
       - name: "Terraform vars"
         description: "Vars to pass to Terraform."
         key: terraform_vars
