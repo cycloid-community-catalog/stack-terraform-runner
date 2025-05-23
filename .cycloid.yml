@@ -1,7 +1,7 @@
 ---
 # Configuration of the Cycloid stack
 version: '4'
-name: 'terraform-runner'
+name: 'Terraform runner'
 canonical: 'stack-terraform-runner'
 description: |
   Allow you to do simple terraform actions: plan, create, destroy.
